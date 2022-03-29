@@ -1,0 +1,87 @@
+@import "../../../styles/app.css";
+.k-button {
+  cursor: pointer;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: var(--white);
+  //   colors
+  &-primary {
+    background: var(--blue);
+  }
+  &-success {
+    background: var(--green);
+  }
+  &-warn {
+    background: var(--orange);
+  }
+  &-danger {
+    background: var(--red);
+  }
+  //   size
+  &-mini {
+    padding: 2px 4px;
+    border-radius: 2px;
+  }
+  &-small {
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+  &-default {
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+  &-large {
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+  &-shape-circle {
+    border-radius: 50%;
+  }
+  &-shape-round {
+    border-radius: 14px;
+  }
+
+  &-shape-text {
+    background: var(--white);
+    &.k-button-primary {
+      color: var(--blue);
+    }
+    &.k-button-success {
+      color: var(--green);
+    }
+    &.k-button-warn {
+      color: var(--orange);
+    }
+    &.k-button-danger {
+      color: var(--red);
+    }
+  }
+  &-shape-border {
+      background: transparent;
+    &.k-button-primary {
+        color: var(--blue);
+        border: 1px solid var(--blue);
+      }
+      &.k-button-success {
+        color: var(--green);
+        border: 1px solid var(--green);
+      }
+      &.k-button-warn {
+        color: var(--orange);
+        border: 1px solid var(--orange);
+      }
+      &.k-button-danger {
+        color: var(--red);
+        border: 1px solid var(--red);
+      }
+  }
+  &-disabled {
+    cursor: not-allowed;
+    filter: grayscale(0.3);
+  }
+
+  + .k-button {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,32 @@
+:root {
+    --red: #e70012;
+    --orange: #ed6200;
+    --yellow: #f3dc0c;
+    --green: #8fc320;
+    --cyan: #02a1e9;
+    --blue: #0268b8;
+    --purple: #920884;
+    --white: white;
+    --black: black;
+    --grey: #666666;
+    --dark-grey: #333333;
+    --light-grey: #999999;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    height: 100%;
+}
+.main-content {
+    flex: 1;
+    padding: 8px;
+    overflow-y: auto;
+    overflow-y: overlay;
+}
